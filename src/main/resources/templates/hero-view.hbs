@@ -5,11 +5,16 @@
     <title>Hero-Squad</title>
 </head>
 <body>
-<h1>View your Hero's!</h1>
-<p>Name: {{hero.getName}}</p>
-<p>Age: {{hero.getAge}}</p>
-<p>specialPower: {{hero.getSpecialPower}}</p>
-<p><em>Weakness: </em>{{hero.getWeakness}}</p>
-
+<h1>View your Heros</h1>
+<div class = "heros">
+    {{#each heros}}
+        <p>Name: {{name}}</p>
+        <p>Age: {{age}}</p>
+        <p>Special Power: {{specialPower}}</p>
+        <p><em>Weakness: </em>{{weakness}}</p>
+    {{/each}}
+</div>
+<p><a href = "/">Click here </a> to return to Homepage</p>
+<p><a href = "/post"> Click here </a> to create another Hero!</p>
 </body>
 </html>

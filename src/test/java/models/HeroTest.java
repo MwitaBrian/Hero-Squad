@@ -14,7 +14,7 @@ class HeroTest {
     @Test
     void allHeroInstancesGetReturnedSuccessfully(){
         Hero hero = new Hero("Mwita", 24, "Kindness","Complicated");
-        Hero hero1 = new Hero("Spiderman", 34, "Spider webs", "Mary Jane");
+        Hero hero1 = new Hero("Spiderman", 34, "Spider-like Characteristics", "Mary Jane");
         assertEquals(2, Hero.getAll().size());
     }
 
