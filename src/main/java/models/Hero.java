@@ -37,11 +37,16 @@ public class Hero {
         return weakness;
     }
 
+    public int getId() {
+        return id;
+    }
+
     public static ArrayList<Hero> getAll(){
         return instances;
     }
 
-    public int getId() {
-        return id;
+    public Hero getById(int id) {
+        return instances.get(id - 1);
     }
+
 }
